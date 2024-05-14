@@ -83,6 +83,11 @@
           "target": [
             "TargetHome"
           ]
+        },
+        {
+          "name": "ViewBooks",
+          "pattern": "ViewBooks/{bookdata}",
+          "target": "TargetViewBooks"
         }
       ],
       "targets": {
@@ -92,6 +97,13 @@
           "clearControlAggregation": false,
           "viewId": "Home",
           "viewName": "Home"
+        },
+        "TargetViewBooks": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewId": "ViewBooks",
+          "viewName": "ViewBooks",
+          "viewLevel": 2
         }
       }
     },

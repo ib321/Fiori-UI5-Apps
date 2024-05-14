@@ -18,6 +18,38 @@ sap.ui.define([
                 var oModel = new JSONModel(Device);
                 oModel.setDefaultBindingMode("OneWay");
                 return oModel;
-        }
-    };
+            },
+            createBookModel: function () {
+                var bookJson = {
+                    "Books": [
+                        {
+                            "id": 1,
+                            "title": "Book Title1",
+                            "author": "Author Name1",
+                            "isbn": "ISBN Number1"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Book Title2",
+                            "author": "Author Name2",
+                            "isbn": "ISBN Number2"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Book Title3",
+                            "author": "Author Name3",
+                            "isbn": "ISBN Number3"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Book Title4",
+                            "author": "Author Name4",
+                            "isbn": "ISBN Number4"
+                        },
+                    ]
+                };
+                var oData = new JSONModel(bookJson);
+                return oData;
+            }
+        };
 });

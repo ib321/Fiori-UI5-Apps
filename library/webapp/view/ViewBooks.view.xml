@@ -1,0 +1,27 @@
+<mvc:View controllerName="com.ib.library.controller.ViewBooks"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page2" title="ViewAllBooks">
+                <content>
+            <Table id="bookTable" items="{book>/Books}">
+                <columns>
+                    <Column id="col1"><Text id="txt1" text="ID" /></Column>
+                    <Column id="col2"><Text id="txt2" text="Title" /></Column>
+                    <Column id="col3"><Text id="txt3" text="Author" /></Column>
+                    <Column id="col4"><Text id="txt4" text="ISBN" /></Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="collist1">
+                        <cells>
+                            <Text id="txt5" text="{book>id}" />
+                            <Text id="txt6" text="{book>title}" />
+                            <Text id="txt7" text="{book>author}" />
+                            <Text id="txt8" text="{book>isbn}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+
+    </Page>
+</mvc:View>

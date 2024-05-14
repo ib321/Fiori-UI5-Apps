@@ -29,6 +29,9 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+
+                //Set the Book model
+                this.setModel(models.createBookModel(),"books");
             }
         });
     }

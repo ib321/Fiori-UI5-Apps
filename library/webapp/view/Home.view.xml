@@ -3,5 +3,8 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content />
+        <Button id="viewallbook" text="View All Books" press="onViewAllBook" />
+        <Button id="addbook" text="Add Book" press="onAddBook" />
+        <Button id="findbook" text="Find Book" press="onFindBook" />
     </Page>
 </mvc:View>
