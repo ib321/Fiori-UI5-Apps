@@ -1,0 +1,32 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="com.ib.democustomer.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app2">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <Panel id="panel" headerText="Enter Your Details: Page 1" class="sapUiResponsiveMargin" width="auto">
+                        <form:SimpleForm id="form1" editable="true" layout="ResponsiveGridLayout">
+                            <Label id="custid" text="Customer ID"/>
+                            <Input id="input1" value="{/custid}"  width="200px" />
+                            <Label id="name" text="Customer Name"/>
+                            <Input id="input2" value="{/name}"  width="200px"/>
+                            <Label id="lname" text="Last Name"/>
+                            <Input id="input3" value="{/lname}"  width="200px"/>
+                            <Label id="email" text="Email ID"/>
+                            <Input id="input4" value="{/email}" width="200px"/>
+                            <Button id="submit" text="Submit" press="onSubmit"/>
+                        </form:SimpleForm>
+                    </Panel>
+
+                    <Panel id="panel2" headerText="Employee Application" class="sapUiResponsiveMargin" width="auto">
+                        <form:SimpleForm id="form2" editable="true" layout="ResponsiveGridLayout">
+                            <Button id="createEmp" text="Create Employee" press="onCreateEmp"/>
+                            <Button id="readEmp" text="Read Employee" press="onReadEmp"/>
+                        </form:SimpleForm>
+                    </Panel>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

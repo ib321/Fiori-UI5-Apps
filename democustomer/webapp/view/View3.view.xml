@@ -1,0 +1,37 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="com.ib.democustomer.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app3">
+            <pages>
+                <Page id="page3" title="{i18n>title}">
+                    <Panel id="panel" headerText="Your Details: Page 2" class="sapUiResponsiveMargin" width="auto">
+                        <form:SimpleForm id="form1" editable="true" layout="ResponsiveGridLayout">
+                            <Label id="custid" text="Customer ID"/>
+                            <Input id="input1" value="{/custid}"  width="200px" enabled="true" />
+                            <Label id="name" text="Customer Name"/>
+                            <Input id="input2" value="{/name}"  width="200px" enabled="true"/>
+                            <Label id="lname" text="Last Name"/>
+                            <Input id="input3" value="{/lname}"  width="200px" enabled="true"/>
+                            <Label id="email" text="Email ID"/>
+                            <Input id="input4" value="{/email}" width="200px" enabled="true"/>
+                            
+                            <Label id="street" text="Street"/>
+                            <Input id="input5" value="{/street}" width="200px" enabled="true"/>
+                            <Label id="zipcode" text="ZIP Code"/>
+                            <Input id="input6" value="{/zipcode}" width="200px" enabled="true"/>
+                             <Label id="country" text="Country"/>
+                            <Input id="input7" value="{/country}" width="200px" enabled="true"/>
+                             <Label id="phoneno" text="Phone Number"/>
+                            <Input id="input8" value="{/phoneno}" width="200px" enabled="true"/>
+
+                            <Button id="preview" text="Preview" press="onPreview"/>
+                            <Button id="clear" text="Clear" press="onClear"/>
+
+                        </form:SimpleForm>
+                    </Panel>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

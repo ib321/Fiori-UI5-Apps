@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="Did">
+        <content>
+            <Panel id="frag-panel" headerText="Do you want to save Details:" class="sapUiResponsiveMargin" width="auto"></Panel>
+            <Label id="fcustid" text="Customer ID"/>
+            <Input id="finput1" value="{/custid}" enabled="true" />
+            <Label id="fname" text="Customer Name"/>
+            <Input id="finput2" value="{/name}" enabled="true"/>
+            <Label id="flname" text="Last Name"/>
+            <Input id="finput3" value="{/lname}" enabled="true"/>
+            <Label id="femail" text="Email ID"/>
+            <Input id="finput4" value="{/email}" enabled="true"/>
+            
+            <Label id="fstreet" text="Street"/>
+            <Input id="finput5" value="{/street}" enabled="true"/>
+            <Label id="fzipcode" text="ZIP Code"/>
+            <Input id="finput6" value="{/zipcode}" enabled="true"/>
+            <Label id="fcountry" text="Country"/>
+            <Input id="finput7" value="{/country}" enabled="true"/>
+            <Label id="fphoneno" text="Phone Number"/>
+            <Input id="finput8" value="{/phoneno}"  enabled="true"/>
+
+            <Button id="save" text="Save" press="onSave"/>
+        </content>
+        <endButton>
+            <Button id="cancel" text="Cancel" press="onCancel"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
