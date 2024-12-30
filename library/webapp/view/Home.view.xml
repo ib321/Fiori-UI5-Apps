@@ -1,10 +1,24 @@
 <mvc:View controllerName="com.ib.library.controller.Home"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m" xmlns:l="sap.ui.layout">
     <Page id="page" title="{i18n>title}">
-        <content />
-        <Button id="viewallbook" text="View All Books" press="onViewAllBook" />
-        <Button id="addbook" text="Add Book" press="onAddBook" />
-        <Button id="findbook" text="Find Book" press="onFindBook" />
+        <l:VerticalLayout id="ib">
+            <Button id="viewallbook" text="View All Books" press="onViewAllBook" />
+            <Button id="addbook" text="Add Book" press="onAddBook" />
+            <Button id="findbook" text="Find Book" press="onFindBook" />
+            <Label id="lb1" text="ID" />
+            <Input id="idInput" type="Number" />
+            <Label id="lb2" text="Title" />
+            <Input id="titleInput" />
+            <Label id="lb3" text="Author" />
+            <Input id="authorInput" />
+            <Label id="lb4" text="ISBN" />
+            <Input id="isbnInput" />
+            <Button id="buttonsave" text="Save" press="onSavePress" />
+            <Label id ="iddelete" text="ID to delete" />
+            <Input id="idToDeleteInput" type="Number" />
+            <Button id="delete" text="Delete" press="onDeletePress" />
+
+        </l:VerticalLayout>
     </Page>
 </mvc:View>
